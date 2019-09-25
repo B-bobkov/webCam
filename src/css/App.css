@@ -1,0 +1,102 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#root{
+  margin: 0px;
+  padding: 0px;
+}
+.webcam {
+  border:3px;
+  border-color:"black";
+  border-style:"solid" ;
+  background:"white";
+  margin:0px;
+  
+}
+.navbar{
+  
+   background-image: url("../images/nav-header.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height:47px
+}
+
+.camera-div{
+  z-index: 1; 
+  position: absolute; 
+  left: 0px;
+  margin: 0px 0px 0px 0px 
+}
+.product-div-lg{
+  line-height: 40%;
+  color:black;
+  z-index: 2; 
+  left: 0;
+  position: absolute; 
+  margin: 15vh 15px 5px 77vw;
+ 
+}
+
+.products{
+  z-index: 0.5;
+  background: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.9rem;
+  margin: 20px 0px 0px 0px;
+  border:1px solid black;
+  padding:1.5vh 0.5vw 0 0.5vw;
+}
+p{
+display: block
+}
+.product-img{
+margin-top: 0px;
+border: 1px solid black;
+width: 50px
+
+}
+.paragraphs{
+  margin: 0.5vh 0.25vh 0px 0.25vw;
+}
+@media screen and (max-width: 576px) {
+  .product-div-sm{
+    line-height: 0.25vh;
+    color:black;
+    z-index: 2; 
+    left: 0;
+    position: absolute; 
+    margin: 20vh 15px 5px 50vw;
+   
+  }
+  .paragraphs{
+    margin: 0.025vh 0.2vw 0px 0.25vw;
+  }
+  p {
+    font-size: 2.3vw;
+
+  }
+  .product-img{
+    width:7vw;
+    height:40px
+  }
+  .camera-div{
+   
+    left: 0px;
+    margin: 0px 0px 0px 2.5vw 
+  }
+
+}
+
+#canvas{
+  height:100vh;
+  width:100vw;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  position: absolute; 
+}
